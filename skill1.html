@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Command Line - ASCII Art Skull</title>
+    <style>
+        /* Mengatur body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Courier New", Courier, monospace;
+            background-color: #1e1e1e;
+            color: #00ff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Styling untuk container terminal */
+        .terminal {
+            width: 80%;
+            height: 80vh;
+            padding: 20px;
+            border: 2px solid #00ff00;
+            background-color: #000;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            overflow-y: auto;
+            font-size: 1.2em;
+            white-space: pre-wrap;
+        }
+
+        /* Styling untuk setiap baris perintah */
+        .line {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling untuk prompt */
+        .prompt {
+            color: #00ff00;
+        }
+
+        /* Styling untuk input teks */
+        .input-text {
+            color: #00ff00;
+        }
+
+        /* Styling untuk kursor yang berkedip */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #00ff00;
+            animation: blink 1s step-end infinite;
+        }
+
+        /* Efek kedip pada kursor */
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Styling khusus untuk ASCII art skull */
+        .ascii-art {
+            color: #00ff00;
+            font-size: 1.5em;
+            white-space: pre-wrap;
+            line-height: 1.2;
+            margin-top: 10px;
+        }
+
+        .skills-list {
+            padding-left: 20px;
+            font-size: 1.2em;
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            font-weight: bold;
+        }
+
+        .skill-name span {
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <!-- Command Line Input -->
+        <div class="line">
+            <span class="prompt">C:\Users\Pengguna&gt;</span><span class="input-text">skill --list</span><span class="cursor"></span>
+        </div>
+        
+        <!-- ASCII Art Skull -->
+        <div class="line ascii-art">
+            <pre>
+         _____
+        /     \
+       | () () |
+        \  ^  /
+         |||||
+         |||||
+            </pre>
+        </div>
+        
+        <!-- Output Skill List -->
+        <div class="line">
+            <span class="prompt">C:\Users\Pengguna&gt;</span><span class="input-text">Skills Available:</span>
+        </div>
+        <div class="line skills-list">
+            <div class="skill">
+                <span class="skill-name">- Web Development <span>(HTML, CSS, JavaScript)</span></span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">- Python Programming <span>(Flask, Django)</span></span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">- Database Management <span>(MySQL, PostgreSQL)</span></span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">- Version Control <span>(Git, GitHub)</span></span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">- UI/UX Design <span>(Figma, Adobe XD)</span></span>
+            </div>
+        </div>
+
+        <!-- Command Exit -->
+        <div class="line">
+            <span class="prompt">C:\Users\Pengguna&gt;</span><span class="input-text">exit</span>
+        </div>
+    </div>
+</body>
+</html>
